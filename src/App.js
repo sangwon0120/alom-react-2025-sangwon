@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  * 예시:
  * import Woojin from "./assignments/woojin";
  */
-import Example from "./assignments/example";
+import ToDo from "./assignments/ToDo";
 
 function App() {
   return (
@@ -16,9 +16,8 @@ function App() {
         */}
         <Route
           path="/"
-          element={<div>App.js와 example.js를 확인해주세요.</div>}
+          element={<ToDo />}
         />
-        <Route path="/example" element={<Example />} />
       </Routes>
     </Router>
   );
